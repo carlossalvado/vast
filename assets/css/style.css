@@ -20,7 +20,7 @@
    * colors
    */
 
-  --russian-violet: hsl(269, 36%, 22%);
+  --russian-violet: hsl(22, 90%, 56%);
   --dark-purple: hsl(268, 22%, 15%);
   --eerie-black: hsl(240, 4%, 10%);
   --davys-gray: hsl(0, 0%, 34%);
@@ -57,7 +57,6 @@
    * spacing
    */
 
-  --section-padding: 50px;
 
   /**
    * box shadow
@@ -174,7 +173,7 @@ body {
 .btn-secondary { background-color: var(--russian-violet); }
 
 .btn-outline {
-  --color: var(--pumpkin);
+  --color: var(--white);
   --width: 100%;
   text-align: center;
   font-weight: var(--fw-500);
@@ -182,8 +181,8 @@ body {
 }
 
 .btn-outline:is(:hover, :focus) {
-  background-color: var(--pumpkin);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--pumpkin);
 }
 
 .section { padding-block: var(--section-padding); }
@@ -260,8 +259,8 @@ body {
   left: 0;
   width: 100%;
   background-color: var(--white);
-  padding-block: 15px;
-  z-index: 4;
+  padding-block: ;
+  z-index: ;
 }
 
 .header.active {
@@ -344,10 +343,10 @@ body {
 .hero {
   background-color: var(--russian-violet);
   color: var(--white);
-  padding-block-start: calc(var(--section-padding) + 70px);
+  padding-block-start: calc(var(--section-padding));
 }
 
-.hero-content { margin-block-end: 20px; }
+.hero-content { margin-block-end: px; }
 
 .hero-title { margin-block: 15px 20px; }
 
@@ -789,7 +788,7 @@ body {
      * spacing
      */
 
-    --section-padding: 100px;
+    --section-padding: 70px;
 
   }
 
@@ -809,17 +808,7 @@ body {
    * HEADER
    */
 
-  .nav-toggle-btn { display: none; }
-
-  .navbar,
-  .navbar.active,
-  .navbar-list { all: unset; }
-
-  .navbar-list {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-  }
+ 
 
 
 
@@ -841,9 +830,9 @@ body {
    * FEATURES
    */
 
-  .features .section-title { margin-block-end: 40px; }
+  .features .section-title { margin-block-end: px; }
 
-  .features-list { grid-template-columns: repeat(4, 1fr); }
+  .features-list { grid-template-columns: repeat(3, 1fr); }
 
 
 
@@ -941,19 +930,7 @@ body {
    * HEADER
    */
 
-  .header { padding-block: 20px; }
-
-  :is(.header, .hero) .container {
-    max-width: unset;
-    padding-inline: 25px;
-  }
-
-  .header .btn {
-    font-size: var(--fs-3);
-    padding: 14px 30px;
-    border-radius: var(--radius-6);
-    margin-block: 0;
-  }
+  
 
 
 
